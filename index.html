@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="/assets/music-solid.svg">
+    <title>Music Player</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <button class="hdbtn">
+                <i style="background: transparent;" class="fa-solid fa-arrow-left"></i>
+            </button>
+            <h3 style="margin: auto;" class="p-now">Playing now</h3>
+            <button class="hdbtn">
+                <i style="background: transparent;" class="fa-solid fa-list"></i>
+            </button>
+        </header>
+        <div class="player">
+            <div class="img-area">
+                <img class="artwork" src="assets/images/SleepwalkMyLifeAway.png" alt="">
+            </div>
+            <div class="song-details">
+                <h1 class="name">Sleepwalk My Life Away</h1>
+                <h3 class="artist">Metallica</h3>
+            </div>
+            <div class="audioC">
+                <div class="song-timer">
+                    <span class="current-time">0:00</span>
+                    <span class="max-duration">0:00</span>
+                </div>
+                <div class="progress-area">
+                    <div class="progress-bar">
+                        <audio id="mainAudio" src="/assets/songs/SleepwalkMyLifeAway.mp3"></audio>
+                    </div>
+                </div>
+            </div>
+            <div class="controls">
+                <button class="btnC" id="prev">
+                    <i class="fa-solid fa-backward"></i>
+                </button>
+                <button class="play-pause btnC">
+                    <i class="fa-solid fa-play"></i>
+                </button>
+                <button class="btnC" id="next">
+                    <i class="fa-solid fa-forward"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="musicList.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
